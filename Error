@@ -1,0 +1,11 @@
+unknown attribute Error
+
+check the schema 
+model:favorites, post_image_Id :integer---> post_image_id 
+To change the schema
+$ rails generate migration rename_post_image_Id_column_to_favorites
+go to db/migrate
+def change
+    rename_column :favorites, :post_image_Id, :post_image_id
+  end
+end
